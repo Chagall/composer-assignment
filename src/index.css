@@ -64,6 +64,12 @@ input {
   border: 2px solid #ddd;
   background: #fafafa;
 }
+:root {
+  --primary: #2e85ec;
+  --primary-dark: #02172f;
+  --accent: #97d8c4;
+  --primary-text: #02172f
+}
 
 input:focus {
   outline: 0;
