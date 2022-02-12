@@ -1,3 +1,10 @@
 .container {
   margin-top: 16px;
+  text-align: center;
+  font-family: Hind,sans-serif;
+  color: var(--primary-text);
+}
+
+.description {
+  font-weight: bold;
 }

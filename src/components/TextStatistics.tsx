@@ -1,13 +1,24 @@
-import React from "react";
 import "./TextStatistics.css";
 
-const TextStatistics = () => {
+const TextStatistics = (props: TextStatisticsProps) => {
   return (
     <div className="container">
-      <p>0 vowels</p>
-      <p>0 consonants</p>
+      <p>
+        <span className="description">Vowels: </span>
+        {props.vowels}
+        <span className="description"> / Consonants: </span>
+        {props.consonants}
+        <span className="description"> / Words: </span>
+        {props.words}
+      </p>
     </div>
   );
+};
+
+interface TextStatisticsProps {
+  vowels: number,
+  consonants: number,
+  words: number
 };
 
 export default TextStatistics;
