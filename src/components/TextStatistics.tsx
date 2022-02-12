@@ -2,7 +2,7 @@ import "./TextStatistics.css";
 
 const TextStatistics = (props: TextStatisticsProps) => {
   return (
-    <div className="container">
+    <div className="statisticsContainer">
       <p>
         <span className="description">Vowels: </span>
         {props.vowels}
