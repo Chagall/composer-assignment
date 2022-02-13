@@ -1,0 +1,14 @@
+.statisticsContainer {
+  margin-top: 16px;
+  text-align: center;
+  font-family: Hind,sans-serif;
+  color: var(--primary-text);
+}
+
+.ui.statistic > .value, .ui.statistics .statistic > .value {
+  color: var(--primary) !important;
+}
+
+.ui.statistic > .label, .ui.statistics .statistic > .label {
+  color: var(--primary-text) !important;
+}
