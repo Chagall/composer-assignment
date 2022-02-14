@@ -20,7 +20,7 @@ pre {
   white-space: pre-wrap;
 }
 
-:not(pre) > code {
+:not(pre)>code {
   font-family: monospace;
   background-color: #eee;
   padding: 3px;
@@ -64,12 +64,6 @@ input {
   border: 2px solid #ddd;
   background: #fafafa;
 }
-:root {
-  --primary: #2e85ec;
-  --primary-dark: #02172f;
-  --accent: #97d8c4;
-  --primary-text: #02172f
-}
 
 input:focus {
   outline: 0;
@@ -81,6 +75,15 @@ iframe {
   border: 1px solid #eee;
 }
 
-[data-slate-editor] > * + * {
+[data-slate-editor]>*+* {
   margin-top: 1em;
+}
+
+#root {
+  height: 100%;
+  --primary: #2e85ec;
+  --primary-dark: #02172f;
+  --accent: #97d8c4;
+  --primary-text: #02172f;
+  background-color: #f9f8f7;
 }
