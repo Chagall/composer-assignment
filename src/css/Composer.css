@@ -1,0 +1,24 @@
+.composer {
+  margin-top: 8px;
+  height: 50vh;
+}
+
+.editable {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, .15);
+  border-radius: .28571429rem;
+  border: 1px solid rgba(34, 36, 38, .15);
+  padding: 1vh 1vw;
+  overflow-y: auto;
+  background-color: #fff;
+  /* alignment defaults to left */
+  text-align: left;
+}
+
+.container {
+  padding-top: 4vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
