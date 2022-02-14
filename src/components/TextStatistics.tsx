@@ -5,7 +5,7 @@ const TextStatistics = (props: TextStatisticsProps) => {
   return (
     <div className="statisticsContainer">
       <Segment padded>
-        <Statistic.Group size="tiny" widths={3}>
+        <Statistic.Group size="tiny" widths={2}>
           <Statistic>
             <Statistic.Value>{props.vowels}</Statistic.Value>
             <Statistic.Label>Vowels</Statistic.Label>
@@ -18,6 +18,10 @@ const TextStatistics = (props: TextStatisticsProps) => {
             <Statistic.Value>{props.words}</Statistic.Value>
             <Statistic.Label>Words</Statistic.Label>
           </Statistic>
+          <Statistic>
+            <Statistic.Value>{props.digits}</Statistic.Value>
+            <Statistic.Label>Digits</Statistic.Label>
+          </Statistic>
         </Statistic.Group>
       </Segment>
     </div>
@@ -27,7 +31,8 @@ const TextStatistics = (props: TextStatisticsProps) => {
 interface TextStatisticsProps {
   vowels: number,
   consonants: number,
-  words: number
+  words: number,
+  digits: number
 };
 
 export default TextStatistics;

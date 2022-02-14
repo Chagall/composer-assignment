@@ -32,6 +32,7 @@ const Composer = (props: AnyAction) => {
   const [vowelsCount, setVowelsCount] = useState<number>(countMatches(Node.string(initialValue[0]), "vowels"));
   const [consonantsCount, setConsonantsCount] = useState<number>(countMatches(Node.string(initialValue[0]), "consonants"));
   const [wordsCount, setWordsCount] = useState<number>(countMatches(Node.string(initialValue[0]), "words"));
+  const [digits, setDigitsCount] = useState<number>(countMatches(Node.string(initialValue[0]), "digits"));
 
   const updateValues = (value: Descendant[]) => {
     let composerText: string = Node.string(value[0]);
@@ -39,6 +40,7 @@ const Composer = (props: AnyAction) => {
     setVowelsCount(countMatches(composerText, "vowels"));
     setConsonantsCount(countMatches(composerText, "consonants"));
     setWordsCount(countMatches(composerText, "words"));
+    setDigitsCount(countMatches(composerText, "digits"));
   }
 
   const renderElement = useCallback(props => <Element {...props} />, []);
@@ -66,6 +68,7 @@ const Composer = (props: AnyAction) => {
           consonants={consonantsCount}
           vowels={vowelsCount}
           words={wordsCount}
+          digits={digits}
         />
       </Slate>
     </>

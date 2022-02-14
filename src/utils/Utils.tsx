@@ -17,6 +17,10 @@ export const countMatches = (text: string, type: string): number => {
       // Regular expression to count the number of words in the text
       matches = text.match(/(\w+)/g);
       break;
+    case "digits":
+      // Regular expression to count the number of digits in the text
+      matches = text.match(/\d/g);
+      break;
     default:
       matches = null;
   }
@@ -25,7 +29,7 @@ export const countMatches = (text: string, type: string): number => {
   return matches === null ? 0 : matches.length;
 }
 
-export const HOTKEYS: Record<string,string> = {
+export const HOTKEYS: Record<string, string> = {
   "mod+1": "left",
   "mod+2": "center",
   "mod+3": "right",
