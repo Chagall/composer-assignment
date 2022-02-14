@@ -51,7 +51,6 @@ const Composer = (props: AnyAction) => {
   return (
     <>
       <Slate editor={editor} value={value} onChange={onChange}>
-        <RichTextButtons editor={useSlate} />
         <div className="composer">
           <Editable
             className="editable"
@@ -64,6 +63,7 @@ const Composer = (props: AnyAction) => {
             onKeyDown={event => handleKeyDownPress(event, props)}
           />
         </div>
+        <RichTextButtons editor={useSlate} />
         <TextStatistics
           consonants={consonantsCount}
           vowels={vowelsCount}
