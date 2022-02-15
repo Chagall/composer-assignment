@@ -53,6 +53,7 @@ const RichTextButtons = (props: AnyAction) => {
           hoverable
           trigger={
             <Button
+              data-testid="align-left-button"
               icon="align left"
               onClick={event => handleClick(event, "left")}
               active={props.state.textAlign === "left"}
@@ -69,6 +70,7 @@ const RichTextButtons = (props: AnyAction) => {
           hoverable
           trigger={
             <Button
+              data-testid="align-center-button"
               icon="align center"
               onClick={event => handleClick(event, "center")}
               active={props.state.textAlign === "center"}
@@ -85,6 +87,7 @@ const RichTextButtons = (props: AnyAction) => {
           hoverable
           trigger={
             <Button
+              data-testid="align-right-button"
               icon="align right"
               onClick={event => handleClick(event, "right")}
               active={props.state.textAlign === "right"}
@@ -101,6 +104,7 @@ const RichTextButtons = (props: AnyAction) => {
           hoverable
           trigger={
             <Button
+              data-testid="justify-button"
               icon="align justify"
               onClick={event => handleClick(event, "justify")}
               active={props.state.textAlign === "justify"}
@@ -112,24 +116,28 @@ const RichTextButtons = (props: AnyAction) => {
         </Popup>
 
         <Button
+          data-testid="bold-button"
           icon="bold"
           onClick={(event) => handleClick(event, "bold")}
           active={isMarkActive(editor, "bold")}
         />
 
         <Button
+          data-testid="italic-button"
           icon="italic"
           onClick={(event) => handleClick(event, "italic")}
           active={isMarkActive(editor, "italic")}
         />
 
         <Button
+          data-testid="underline-button"
           icon="underline"
           onClick={(event) => handleClick(event, "underline")}
           active={isMarkActive(editor, "underline")}
         />
 
         <Button
+          data-testid="code-button"
           icon="code"
           onClick={(event) => handleClick(event, "code")}
           active={isMarkActive(editor, "code")}
